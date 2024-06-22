@@ -1,43 +1,55 @@
-main{
-    max-width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1E90FF; /* Ocean Blue */
+    --secondary-color: #F8F8FF; /* Rapids White */
+    --accent1-color: #2E8B57; /* River Green */
+    --accent2-color: #FFA500; /* Adventure Orange */
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --nav-bg-color: #2E8B57; /* River Green */
+    --nav-link-color: #F8F8FF; /* Rapids White */
+    --nav-hover-link-color: #FFA500; /* Adventure Orange */
+    --nav-hover-bg-color: #1E90FF; /* Ocean Blue */
 }
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto; 
+    background-color: var(--secondary-color);
+    color: #333; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-link-color);
+}
+
+p {
+    padding: 10px 0;
+}
+
 nav {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
+    background-color: var(--nav-bg-color);
+    padding: 10px;
 }
+
 nav a {
-    color: white;
-    margin: 0 1rem;
+    color: var(--nav-link-color);
     text-decoration: none;
+    padding: 10px;
+    display: inline-block;
 }
-h1 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-aside {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-    text-align: left;
-}
-aside img{
-    width: 150px;
-    height: auto;
-}
-p{
-    padding: 0;
-}
-footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
 }

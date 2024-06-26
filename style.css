@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* Class Selector*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -55,6 +60,16 @@ aside.box img {
     height: auto;
 }
 
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+aside h2{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
 footer {
     background-color: #333;
     color: white;

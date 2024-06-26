@@ -1,43 +1,83 @@
-main{
-    max-width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-nav {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-}
-nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-h1 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-aside {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-    text-align: left;
-}
-aside img{
-    width: 150px;
-    height: auto;
-}
-p{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
 }
-footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+aside.box {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+aside.box img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ul.box {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+ul.box li {
+    margin: 5px 0;
+}
+
+ul.box li a {
+    text-decoration: none;
+    color: #007BFF;
 }

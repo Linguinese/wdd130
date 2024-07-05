@@ -17,11 +17,28 @@ body {
     padding: 20px;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px 0;
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     background-color: var(--primary-color);
     color: white;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -71,25 +88,56 @@ nav a {
     object-fit: cover;
 }
 
-section {
+.history {
     margin: 20px 0;
 }
 
-footer p {
-    margin-bottom: 10px;
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer a img {
+.adventures figure {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.adventures img {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+}
+
+.social img {
     width: 24px;
     height: 24px;
     margin: 0 10px;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
+.social a:hover {
     opacity: 0.7;
 }
